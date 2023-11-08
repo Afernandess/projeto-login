@@ -28,8 +28,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
     width: 270px;
     height: 500px;
@@ -39,6 +37,8 @@ section#login{
 
     transition: width 1s, heigth 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+
 }
 
 section#login > div#imagem {
@@ -71,12 +71,33 @@ form > div.campo{
     height: 30px;
     border-radius: 5px;
     margin: 5px 0px;
+    border: 2px solid black;
+    /*background-color: royalblue;*/
 }
 
 div.campo > label {
     display: none;
 }
 
+div.campo > span{
+    /*background-color: burlywood;*/
+    height: 30px;
+    width: 30px;
+    font-size: 2em;
+    
+}
+
+div.campo > input{
+    /*background-color: red;*/
+    font-size: 1em;
+    width: calc(100% - 38px);
+    height: 93%;
+    
+    border: 0px;
+    border-radius: 5px;
+    padding: 3px;
+    transform: translateY(-13px);
+}
 
 form > input[type=submit] {
     display: block;
